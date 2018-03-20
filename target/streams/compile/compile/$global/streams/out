@@ -1,0 +1,13 @@
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/lab6/app/views/productAdmin/viewOrders.scala.html:7:16: object customers is not a member of package models[0m
+[0m[[0m[31merror[0m] [0m[0m@import models.customers._[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/lab6/app/views/productAdmin/viewOrders.scala.html:35:30: value getOrder is not a member of models.users.Customer[0m
+[0m[[0m[31merror[0m] [0m[0m                @if(customer.getOrder() != null) {[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/lab6/app/views/productAdmin/viewOrders.scala.html:37:40: value getOrder is not a member of models.users.Customer[0m
+[0m[[0m[31merror[0m] [0m[0m                    @for(i <- customer.getOrder().getOrderItems()) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/lab6/app/views/productAdmin/viewOrders.scala.html:59:63: not found: value order[0m
+[0m[[0m[31merror[0m] [0m[0m                    <a href="@routes.ShoppingCtrl.cancelOrder(order.getId)" class="btn btn-danger btn-sm" onclick="return confirmDel();">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
