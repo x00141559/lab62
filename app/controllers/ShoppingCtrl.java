@@ -1,8 +1,13 @@
+
 package controllers;
 
 import play.mvc.*;
 import play.data.*;
 import javax.inject.Inject;
+
+import io.ebean.*;
+import java.util.*;
+import java.time.*;
 
 import views.html.*;
 import play.db.ebean.Transactional;
@@ -163,6 +168,7 @@ public class ShoppingCtrl extends Controller {
         // Show order confirmed view
         return ok(orderConfirmed.render(c, order));
     }
+   
     
     // View an individual order
     @Transactional
@@ -170,9 +176,7 @@ public class ShoppingCtrl extends Controller {
         ShopOrder order = ShopOrder.find.byId(id);
         return ok(orderConfirmed.render(getCurrentUser(), order));
     }
-public Result viewOrder(){
-    return ok (viewOrder.render())
-}
+
 
     public Result cancelOrder(long id){
         ShopOrder order = ShopOrder.find.byId(id);
@@ -204,4 +208,16 @@ public Result viewOrder(){
     flash ("Sorry, it is too late to cancel this order");
 return redirect(routes.ShoppingCtrl.showBasket());
 
-}}
+}
+// @Transactional
+// public Result viewOrders() {
+
+//     Customer currUser = getCurrentUser();
+
+//     List<ShopOrder> orders = Ebean.find(ShopOrder.class)
+//     .where().eq("customer", currUser)
+//     .findList();
+
+//     return ok(viewOrders.render(currUser, orders));
+//}
+}

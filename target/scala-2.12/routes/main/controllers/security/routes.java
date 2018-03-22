@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/media/sf_student/lab6/conf/routes
-// @DATE:Tue Mar 20 15:20:10 GMT 2018
+// @SOURCE:/home/wdd/webapps/lab62/conf/routes
+// @DATE:Thu Mar 22 12:49:10 GMT 2018
 
 package controllers.security;
 

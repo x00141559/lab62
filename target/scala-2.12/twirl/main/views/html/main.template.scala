@@ -59,23 +59,22 @@ Seq[Any](format.raw/*1.58*/("""
                     <a href="#">About</a>
                 </li>
 
-                <li """),_display_(/*30.22*/if(title=="Orders")/*30.41*/{_display_(Seq[Any](format.raw/*30.42*/("""class="active"""")))}),format.raw/*30.57*/(""">
-                    <a href="/viewOrders">View Orders</a>    
-                </li>
                 <li>
-                    <a href="#">View Orders</a>
-                </li>
+                    <li """),_display_(/*31.26*/if(title=="Orders")/*31.45*/{_display_(Seq[Any](format.raw/*31.46*/("""class="active"""")))}),format.raw/*31.61*/(""">
+                        <a href="/viewOrders">View Orders</a>    
+                    </li>
+                    
                 <li>
                     <a href="#">Contact</a>
                 </li>
-                <li """),_display_(/*39.22*/if(title=="Login")/*39.40*/{_display_(Seq[Any](format.raw/*39.41*/("""class="active"""")))}),format.raw/*39.56*/(""">
-                    """),_display_(/*40.22*/if(user != null)/*40.38*/ {_display_(Seq[Any](format.raw/*40.40*/("""
-                        """),format.raw/*41.25*/("""<a href=""""),_display_(/*41.35*/controllers/*41.46*/.security.routes.LoginCtrl.logout()),format.raw/*41.81*/("""">Logout """),_display_(/*41.91*/user/*41.95*/.getName()),format.raw/*41.105*/("""</a>
-                    """)))}/*42.23*/else/*42.28*/{_display_(Seq[Any](format.raw/*42.29*/("""
-                        """),format.raw/*43.25*/("""<a href=""""),_display_(/*43.35*/controllers/*43.46*/.security.routes.LoginCtrl.login()),format.raw/*43.80*/("""">Login</a>
-                    """)))}),format.raw/*44.22*/("""
+                <li """),_display_(/*38.22*/if(title=="Login")/*38.40*/{_display_(Seq[Any](format.raw/*38.41*/("""class="active"""")))}),format.raw/*38.56*/(""">
+                    """),_display_(/*39.22*/if(user != null)/*39.38*/ {_display_(Seq[Any](format.raw/*39.40*/("""
+                        """),format.raw/*40.25*/("""<a href=""""),_display_(/*40.35*/controllers/*40.46*/.security.routes.LoginCtrl.logout()),format.raw/*40.81*/("""">Logout """),_display_(/*40.91*/user/*40.95*/.getName()),format.raw/*40.105*/("""</a>
+                    """)))}/*41.23*/else/*41.28*/{_display_(Seq[Any](format.raw/*41.29*/("""
+                        """),format.raw/*42.25*/("""<a href=""""),_display_(/*42.35*/controllers/*42.46*/.security.routes.LoginCtrl.login()),format.raw/*42.80*/("""">Login</a>
+                    """)))}),format.raw/*43.22*/("""
 
-                """),format.raw/*46.17*/("""</li>
+                """),format.raw/*45.17*/("""</li>
             </ul>
 
         </div>
@@ -85,8 +84,8 @@ Seq[Any](format.raw/*1.58*/("""
     <container>
         <row>
             <div class="col-md-12">
-                """),_display_(/*56.18*/content),format.raw/*56.25*/("""
-            """),format.raw/*57.13*/("""</div>
+                """),_display_(/*55.18*/content),format.raw/*55.25*/("""
+            """),format.raw/*56.13*/("""</div>
         </row>
     </container>
 <br>
@@ -100,7 +99,7 @@ Seq[Any](format.raw/*1.58*/("""
         </row>
     </footer>
     </container>
-    <script src=""""),_display_(/*71.19*/routes/*71.25*/.Assets.versioned("javascripts/main.js")),format.raw/*71.65*/(""""></script>
+    <script src=""""),_display_(/*70.19*/routes/*70.25*/.Assets.versioned("javascripts/main.js")),format.raw/*70.65*/(""""></script>
 </body>
 
 </html>"""))
@@ -119,11 +118,11 @@ Seq[Any](format.raw/*1.58*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Tue Mar 20 15:10:04 GMT 2018
-                  SOURCE: /media/sf_student/lab6/app/views/main.scala.html
-                  HASH: 70f88a7d3bed15d91757eed5beef37103ac589bb
-                  MATRIX: 970->1|1121->57|1149->59|1270->154|1295->159|1507->344|1522->350|1584->391|1815->595|1830->601|1879->629|2006->729|2037->751|2076->752|2122->767|2237->855|2265->874|2304->875|2350->890|2662->1175|2689->1193|2728->1194|2774->1209|2824->1232|2849->1248|2889->1250|2942->1275|2979->1285|2999->1296|3055->1331|3092->1341|3105->1345|3137->1355|3182->1382|3195->1387|3234->1388|3287->1413|3324->1423|3344->1434|3399->1468|3463->1501|3509->1519|3672->1655|3700->1662|3741->1675|4049->1956|4064->1962|4125->2002
-                  LINES: 28->1|33->1|35->3|41->9|41->9|45->13|45->13|45->13|53->21|53->21|53->21|58->26|58->26|58->26|58->26|62->30|62->30|62->30|62->30|71->39|71->39|71->39|71->39|72->40|72->40|72->40|73->41|73->41|73->41|73->41|73->41|73->41|73->41|74->42|74->42|74->42|75->43|75->43|75->43|75->43|76->44|78->46|88->56|88->56|89->57|103->71|103->71|103->71
+                  DATE: Thu Mar 22 12:34:42 GMT 2018
+                  SOURCE: /home/wdd/webapps/lab62/app/views/main.scala.html
+                  HASH: 0b97d2138f076e37eb8b4b17938dfa7df2000f4a
+                  MATRIX: 970->1|1121->57|1149->59|1270->154|1295->159|1507->344|1522->350|1584->391|1815->595|1830->601|1879->629|2006->729|2037->751|2076->752|2122->767|2262->880|2290->899|2329->900|2375->915|2625->1138|2652->1156|2691->1157|2737->1172|2787->1195|2812->1211|2852->1213|2905->1238|2942->1248|2962->1259|3018->1294|3055->1304|3068->1308|3100->1318|3145->1345|3158->1350|3197->1351|3250->1376|3287->1386|3307->1397|3362->1431|3426->1464|3472->1482|3635->1618|3663->1625|3704->1638|4012->1919|4027->1925|4088->1965
+                  LINES: 28->1|33->1|35->3|41->9|41->9|45->13|45->13|45->13|53->21|53->21|53->21|58->26|58->26|58->26|58->26|63->31|63->31|63->31|63->31|70->38|70->38|70->38|70->38|71->39|71->39|71->39|72->40|72->40|72->40|72->40|72->40|72->40|72->40|73->41|73->41|73->41|74->42|74->42|74->42|74->42|75->43|77->45|87->55|87->55|88->56|102->70|102->70|102->70
                   -- GENERATED --
               */
           

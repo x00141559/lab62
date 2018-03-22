@@ -32,7 +32,7 @@
 			<tbody>
                 @if(order != null) {
                     <!-- Start of For loop - For each p in products add a row -->
-                    @for(j <- order){
+                  
         
                     @for(i <- order.getItems) {
                     <tr>
@@ -43,7 +43,7 @@
                         <td>&euro; @("%.2f".format(i.getItemTotal))</td>
                     </tr>
                     }<!-- End of For loop -->
-              }}
+              }
 			</tbody>
 		</table>
         <div class="row">
@@ -52,7 +52,7 @@
             </div>  
             <div class="col-md-6">
                 <p class="text-right">
-                    <a href="@routes.ShoppingCtrl.basket()" class="btn btn-success btn-sm">
+                    <a href="@routes.ShoppingCtrl.cancelOrder(order.getId)" class="btn btn-success btn-sm">
                     <span class="glyphicon glyphicon-euro"></span> Cancel Order</a>
                 </p>
             </div> 

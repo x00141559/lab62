@@ -32,6 +32,7 @@ GET     /Admin/listProducts/:cat            controllers.AdminProductCtrl.listPro
 
 GET		/Admin/addProduct					controllers.AdminProductCtrl.addProduct()
 POST	/Admin/addProductSubmit				controllers.AdminProductCtrl.addProductSubmit()
+GET     /cancelOrder/:id                    controllers.ShoppingCtrl.cancelOrder(id: Long)
 
 GET		/Admin/updateProduct/:id			controllers.AdminProductCtrl.updateProduct(id:Long)
 POST	/Admin/updateProductSubmit/:id		controllers.AdminProductCtrl.updateProductSubmit(id:Long)

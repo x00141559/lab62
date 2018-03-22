@@ -27,12 +27,11 @@
                     <a href="#">About</a>
                 </li>
 
-                <li @if(title=="Orders"){class="active"}>
-                    <a href="/viewOrders">View Orders</a>    
-                </li>
                 <li>
-                    <a href="#">View Orders</a>
-                </li>
+                    <li @if(title=="Orders"){class="active"}>
+                        <a href="/viewOrders">View Orders</a>    
+                    </li>
+                    
                 <li>
                     <a href="#">Contact</a>
                 </li>
